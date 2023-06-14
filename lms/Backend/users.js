@@ -17,7 +17,7 @@ const usersSchema = new mongoose.Schema({
 // Create the user model
 const Users = mongoose.model('Users', usersSchema);
 
-router.get('/users', async (req, res) => {
+router.get('/api/users', async (req, res) => {
   try {
     const foundUsers = await Users.find();
     res.send(foundUsers);
@@ -27,7 +27,13 @@ router.get('/users', async (req, res) => {
   }
 });
 
-router.post('/register', async (req, res) => {
+router.get('/api/login', async (req, res) => {
+  
+    res.sendFile(__dirname+'login.html');
+});
+
+
+router.post('/api/register', async (req, res) => {
   try {
     const { username, password, email, first_name, last_name, Role, profile } = req.body;
 
@@ -55,7 +61,7 @@ router.post('/register', async (req, res) => {
   }
 });
 
-router.post('/login', async (req, res) => {
+router.post('/api/login', async (req, res) => {
   try {
     const { username, password } = req.body;
 

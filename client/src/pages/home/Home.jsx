@@ -1,4 +1,4 @@
-import "./home.scss"
+
 
 const Home=() => {
     return (
@@ -11,4 +11,4 @@ const Home=() => {
     )
 }
 
-export default Home
+module.export = Home;

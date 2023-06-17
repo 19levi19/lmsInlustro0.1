@@ -1,9 +1,7 @@
 
 import Home from "./pages/home/Home";
-import Login from "./pages/Login/login";
 import List from "./pages/List/List";
-import Single from "./pages/Single/Single";
-import New from "./pages/New/New";
+import Courses from "./courses_catalog/courses";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -22,6 +20,9 @@ function App() {
             <Route index element={<List/>}/>
             <Route path=":productId" element={<single/>}/>
             <Route path="new" element={<new/>}/>  
+          </Route>
+          <Route path="Courses">
+            <Route index element={<Courses />}/>
           </Route>
         </Route>
        </Routes>

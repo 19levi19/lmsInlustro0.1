@@ -1,9 +1,10 @@
-import sidebar from "../../components/sidebar/sidebar";
+import Sidebar from "../../components/sidebar/sidebar";
 import "./home.scss";
 const Home = () => {
     return (
           <div className="home">
-            <sidebar/>
+            <Sidebar/>
+          
             <div className="homeContainer"></div>
           </div>
     );

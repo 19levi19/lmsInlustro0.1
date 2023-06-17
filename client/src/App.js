@@ -1,8 +1,9 @@
 
 import Home from "./pages/home/Home";
 import List from "./pages/List/List";
-import Single from "./pages/Single/Single";
-import New from "./pages/New/New";
+// import Single from "./pages/Single/Single";
+// import New from "./pages/New/New";
+import Courses from "./courses_catalog/courses";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (

@@ -25,7 +25,11 @@ const theme = createTheme({
 const Courses = () => {
 
     const ar = [
-        ""
+        'one',
+        'two',
+        'three',
+        'three',
+        'three',
     ];
     const [data, setData] = useState();
     const [images, setImages] = useState();

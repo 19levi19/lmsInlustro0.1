@@ -1,9 +1,6 @@
 
 import Home from "./pages/home/Home";
-import Login from "./pages/Login/login";
 import List from "./pages/List/List";
-import Single from "./pages/Single/Single";
-import New from "./pages/New/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (

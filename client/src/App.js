@@ -1,4 +1,3 @@
-
 import Home from "./pages/home/Home";
 // import List from "./pages/List/List";
 // import Single from "./pages/Single/Single";
@@ -9,17 +8,14 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-       <Routes>
-         <Route path="/">
-          <Route index element={<Home />} />
-    
-          
-          
-          <Route path="Courses" >
-            <Route index element={<Courses />}/>
+        <Routes>
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="Courses">
+              <Route index element={<Courses />} />
+            </Route>
           </Route>
-        </Route>
-       </Routes>
+        </Routes>
       </BrowserRouter>
     </div>
   );

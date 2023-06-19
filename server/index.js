@@ -1,7 +1,8 @@
 import express from "express";
 import connectDB from "./././mongodb/connection.js";
 import bodyParser from "body-parser";
-import courserouterss from "./routes/courses.routes.js";
+import courserouters from "./routes/courses.routes.js";
+import quizzrouters from "./routes/quizz.routes.js"
 import cors from 'cors';
 const app = express();
 
@@ -13,7 +14,11 @@ app.use(
   })
 );
 app.use(cors());
-app.use("/courses", courserouterss);
+
+// calling routes
+app.use("/courses", courserouters);
+app.use('/quizz',quizzrouters)
+
 
 const startServer = async () => {
   try {

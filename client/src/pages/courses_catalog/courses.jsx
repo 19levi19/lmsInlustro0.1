@@ -19,6 +19,8 @@ const theme = createTheme({
         success: {
             dark: '#009688',
         },
+
+        
     },
 });
 
@@ -72,6 +74,12 @@ const Courses = () => {
                     borderRadius: 2,
                     p: 2,
                     maxWidth: 300,
+                    
+                    '&:hover': {
+                        backgroundColor: '#e0e0e0',
+                        transform: 'scale(1.05)',
+                      },
+
 
                 }}
             >

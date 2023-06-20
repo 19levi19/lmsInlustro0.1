@@ -24,32 +24,51 @@ const Sidebar = () => {
                         <span>Home</span>
                     </li>
                     <li>
+                    <Link to="/list" style={{ textDecoration:"none"}}>
                     <MenuBookIcon className="Icon"/>
                         <span>Browse Courses</span>
+                    </Link>
                     </li>
                     <li>
+                    <Link to="/course" style={{ textDecoration:"none"}}>
                     <LocalLibraryIcon className="Icon"/>
                         <span>My Courses</span>
+                    </Link>
                     </li>
                     <li>
+                    <Link to="/List" style={{ textDecoration:"none"}}>
                     <QuizIcon className="Icon"/>
                         <span>Quiz </span>
+                        </Link>
                     </li>
                     <li>
+                    <Link to="/List" style={{ textDecoration:"none"}}>
                     <NotificationsActiveIcon className="Icon"/>
                         <span>Notification</span>
+                        </Link>
                     </li>
                     <li>
+                    <Link to="/List" style={{ textDecoration:"none"}}>
+                    <SettingsSuggestIcon className="Icon"/>
+                        <span>Settings</span>
+                        </Link>
+                    </li>
+                    <p className="Title"> USER</p>
+                    <li>
+                    <Link to="/List" style={{ textDecoration:"none"}}>
                     <AccountCircleIcon className="Icon"/>
                         <span>Profile</span>
+                    </Link>
                     </li>
                     <li>
                     <SettingsSuggestIcon className="Icon"/>
                         <span>Settings</span>
                     </li>
                     <li>
+                    <Link to="/List" style={{ textDecoration:"none"}}>
                     <LogoutIcon className="Icon"/>
                         <span>logout</span>
+                        </Link>
                     </li>
                 </ul>
             </div>

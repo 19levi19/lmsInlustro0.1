@@ -19,6 +19,9 @@ const Home = () => {
 
         </div>
 
+        <div className="Homepage">
+          <Homepage/>
+      </div>
       </div>
     </div>
   );

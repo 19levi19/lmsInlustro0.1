@@ -1,21 +1,20 @@
 import Sidebar from "../../components/sidebar/sidebar";
 import Navbar from "../../components/navbar/navbar";
-import Widget from "../../components/widget/Widget"
+// import Widget from "../../components/widget/Widget"
+import CourseDetails from "../../pages/course_details/coursedetails";
 import "./home.scss";
+
 const Home = () => {
     return (
       <div className="home">
         <Sidebar/>
         <div className="homeContainer">
           <Navbar/>
-        </div>
-          <div className="Widget">
-            <Widget/>
-            <Widget/>
-            <Widget/>
-            <Widget/>
-            <Widget/>
+          <div className="CourseDetails">
+            <CourseDetails/>
           </div>
+        </div>
+          
       </div>
     );
   };

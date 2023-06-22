@@ -1,42 +1,27 @@
-// import db from "./././mongodb/connection.js";
-const bodyparser = require('body-parser');
-const express = require('express');
-const db = require("./././mongodb/connection");
-const bodyParser = require('body-parser');
+import express from "express";
+import connectDB from "./././mongodb/connection.js";
+import bodyParser from "body-parser";
+import courserouterss from "./routes/courses.routes.js";
+import cors from 'cors';
 const app = express();
 
-
 app.use(express.static("public"));
-app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({
-    extended: true
-  }));
-  
+app.set("view engine", "ejs");
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+app.use(cors());
+app.use("/courses", courserouterss);
 
-
-  const startServer = async () => {
-    try {
-        connectDB(db);
-
-        app.listen(3000, () =>
-            console.log("Server started on port 3000 "),
-        );
-    } catch (error) {
-        console.log(error);
-    }
+const startServer = async () => {
+  try {
+    await connectDB();
+    app.listen(5000, () => console.log("Server started on port 5000 "));
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-
-
-
-
-
-
-
-
-
-
-  app.listen(3000, () => {
-    console.log('Server is running on port 3000');
-  });
-
+startServer();

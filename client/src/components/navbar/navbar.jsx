@@ -24,6 +24,7 @@ const Navbar = () => {
             <FullscreenExitOutlinedIcon className="icon" />
           </div>
           <div className="item">
+            
             <NotificationsNoneOutlinedIcon className="icon" />
             <div className="counter">1</div>
           </div>

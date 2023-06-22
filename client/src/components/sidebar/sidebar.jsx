@@ -7,22 +7,25 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
-
+import {Link} from "react-router-dom"
 
 const Sidebar = () => {
     return(
         <div className="Sidebar">
             <div className="top">
-                <span className="Logo">LMS</span>
+                <span className="Logo">InLustro</span>
             </div>
             <hr/>
             <div className="center">
                 <ul>
-                    <p className="Title"> STUDENT</p>
+                    <p className="Title"> DASHBOARD</p>
                     <li>
+                    <Link to="/" style={{textDecoration:"none"}}>
                     <HomeIcon className="Icon"/>
                         <span>Home</span>
+                        </Link>
                     </li>
+                    <p className="Title"> STUDENT</p>
                     <li>
                     <Link to="/list" style={{ textDecoration:"none"}}>
                     <MenuBookIcon className="Icon"/>
@@ -36,36 +39,32 @@ const Sidebar = () => {
                     </Link>
                     </li>
                     <li>
-                    <Link to="/List" style={{ textDecoration:"none"}}>
+                    <Link to="/QuizMain" style={{ textDecoration:"none"}}>
                     <QuizIcon className="Icon"/>
                         <span>Quiz </span>
                         </Link>
                     </li>
                     <li>
-                    <Link to="/List" style={{ textDecoration:"none"}}>
+                    <Link to="/NotifSettings" style={{ textDecoration:"none"}}>
                     <NotificationsActiveIcon className="Icon"/>
                         <span>Notification</span>
                         </Link>
                     </li>
-                    <li>
-                    <Link to="/List" style={{ textDecoration:"none"}}>
-                    <SettingsSuggestIcon className="Icon"/>
-                        <span>Settings</span>
-                        </Link>
-                    </li>
                     <p className="Title"> USER</p>
                     <li>
-                    <Link to="/List" style={{ textDecoration:"none"}}>
+                    <Link to="/Profile" style={{ textDecoration:"none"}}>
                     <AccountCircleIcon className="Icon"/>
                         <span>Profile</span>
                     </Link>
                     </li>
                     <li>
+                    <Link to="/LmsSettings" style={{ textDecoration:"none"}}>
                     <SettingsSuggestIcon className="Icon"/>
                         <span>Settings</span>
+                        </Link>
                     </li>
                     <li>
-                    <Link to="/List" style={{ textDecoration:"none"}}>
+                    <Link to="/Login" style={{ textDecoration:"none"}}>
                     <LogoutIcon className="Icon"/>
                         <span>logout</span>
                         </Link>

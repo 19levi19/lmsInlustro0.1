@@ -5,7 +5,7 @@
     background-color: rgba(66, 95, 174, 0.745);
   
     .top {
-      height: 50px;
+      height: 42px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -13,7 +13,7 @@
       .Logo {
         font-size: 20px;
         font-weight: bold;
-        color: #6439ff;
+        color: #4a25cc;
       }
     }
   
@@ -30,10 +30,10 @@
         margin: 0;
         padding: 0;
   
-        .title {
-          font-size: 10px;
+        .Title {
+          font-size: 12px;
           font-weight: bold;
-          color: #fffefe;
+          color: rgb(198, 195, 195);
           margin-top: 15px;
           margin-bottom: 5px;
         }
@@ -48,16 +48,17 @@
             background-color: #4d3aa7b2;
           }
   
-          .icon {
-            font-size: 18px;
-            color: #7451f8;
+          .Icon {
+            font-size: 25px;
+            color: #4822cf;
           }
   
           span{
-              font-size: 13px;
-              font-weight: 600;
-              color: #ffffff;
-              margin-left: 10px;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-left: 10px;
           }
         }
       }

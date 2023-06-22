@@ -1,27 +1,36 @@
-import "./homepage.scss";
-import Courses from "../CoursesCatalog/Courses"
-
-import{Link} from "react-router-dom";
-import CourseDetails from "../courseDetails/CourseDetails";
-function homepage(){
-return(
-    <>
-    <div className="homepage">
-        <img alt = "homeImage" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"/>
-        <div className="text">
-            <h1> Learn to Code </h1>
-            <p>Business, technology and Creative Skills taught by industry experts.</p>
-            <p>Explore a wide range of skills with our professional tutorials.</p>
-            <Link to="/list" style={{ textDecoration:"none"}}>
-            <button id ="button">BROWSE COURSE</button>
-            </Link>
+import Sidebar from "../../components/sidebar/sidebar";
+import Navbar from "../../components/navbar/Navbar";
+import NotifSettings from "./NotifSettings";
+const Notification = () => {
+  return (
+    <div className="home">
+      <Sidebar />
+      <div className="homeContainer">
+        <Navbar />
+        <div className="NotifSettings">
+          <NotifSettings />
         </div>
-        <div className="Coursedetails">
-            <CourseDetails/>
-            <hr/>
-        <div className="courses">
-            <Courses/>
-        </div>
+        <div>
+            <p>
+            Please note that changing your notification settings may affect the way you receive important updates and announcements regarding your courses and assignments.
+            </p>
+            <p>
+            Fill the checkbox for notifications.
+            </p>
+            <p>
+            Email Notifications.
+            </p>
+            <p>
+            SMS notifications.
+            </p>
+            <p>
+            Push Notifications.
+            </p>
+            <p>
+            You will recieve notifications for the courses you enrolled.
+            </p>
+            <hr>
+            </hr>
         </div>
         <footer>
         <div class="bg-white border-top-2 mt-auto">
@@ -43,8 +52,10 @@ return(
                     </div>
                 </div>
         </footer>
-    </div>
-    </>
-)
-}
-export default homepage;
+        </div>
+        
+      </div>
+  );
+};
+
+export default Notification;

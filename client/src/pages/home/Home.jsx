@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 // import Widget from "../../components/widget/Widget"
 import CourseDetails from "../../pages/course_details/coursedetails";
 import "./home.scss";
-import Homepage from "../../pages/homepage/Homepage"
+import Homepage2 from "../../pages/homepage/homepage2"
 
 const Home = () => {
   return (
@@ -11,17 +11,11 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-         <div className="home">
-          <Homepage />
-          <div className="Coursedetails">
-            <CourseDetails/>
-          </div>
+         <div className="Homepage2">
+          <Homepage2 />
 
         </div>
 
-        <div className="Homepage">
-          <Homepage/>
-      </div>
       </div>
     </div>
   );

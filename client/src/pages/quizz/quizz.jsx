@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Quizz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -6,10 +6,19 @@ const Quizz = () => {
   const [score, setScore] = useState(0);
 
   // Mock quiz data
-  useEffect(()=>
-  
-  
-  )
+  const quizData = [
+    {
+      question: 'What is the capital of France?',
+      options: ['Paris', 'London', 'Berlin', 'Rome'],
+      answer: 'Paris',
+    },
+    {
+      question: 'Which planet is known as the Red Planet?',
+      options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
+      answer: 'Mars',
+    },
+    // Add more questions here...
+  ];
 
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);

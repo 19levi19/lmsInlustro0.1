@@ -1,7 +1,7 @@
 import Home from "./pages/home/Home";
 // import List from "./pages/List/List";
 // import Single from "./pages/Single/Single";
-// import New from "./pages/New/New";
+import Quizz from "./pages/quizz/quizz";
 import CourseDetails from "./pages/course_details/coursedetails";
 import Courses from "./pages/courses_catalog/courses";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,6 +19,9 @@ function App() {
           
           <Route path="/Courses" >
             <Route index element={<Courses />}/>
+          </Route>
+          <Route path="/quizz" >
+            <Route index element={< Quizz/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

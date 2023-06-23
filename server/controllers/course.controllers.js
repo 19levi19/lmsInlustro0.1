@@ -1,6 +1,6 @@
 import express from "express";
 import Courses from "../mongodb/models/courses.js";
-const app = express();
+
 
 const createcourse = async (req, res) => {
   try {

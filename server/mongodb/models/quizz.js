@@ -1,24 +1,30 @@
 import mongoose from 'mongoose';
 
 const quizzschema =  new mongoose.Schema({
-    quizz_id: String, // Unique identifier for the quiz
-  title: String, // Title of the quiz
-  description: String, // Description or instructions for the quiz
-  courseId: {type: mongoose.Schema.Types.ObjectId,ref:'users'}, // ID of the course associated with the quiz
+  QuizzId: { 
+    type: String , 
+    required: true,
+    unique: true
+   }, 
+  title: String, 
+  description:{ text: String}, 
+  courseId: String, 
   questions: [
     {
-      id: String, // Unique identifier for the question
-      text: String, // The text of the question
+      q_id: String,
+      text: String,
       options: [
         {
-          id: String, // Unique identifier for the option
-          text: String, // The text of the option
-          isCorrect: Boolean, // Indicates whether the option is correct or not
+          o_id: String, 
+          text: String, 
+          isCorrect: Boolean, 
         },
       ]
     },
 ]
 });
+
+
 
 const quizz = mongoose.model("quizz",quizzschema)
 

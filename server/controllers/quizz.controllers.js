@@ -1,7 +1,9 @@
 import express from 'express';
 import quizz from '../mongodb/models/quizz.js';
+import mongoose from 'mongoose';
+const ObjectId = mongoose.Types.ObjectId;
 
-const getallquizzes = async (req,res) => {
+const getallquizz = async (req,res) => {
     try{
         const foundquizz = await quizz.find();
         res.send(foundquizz);
@@ -13,59 +15,55 @@ const getallquizzes = async (req,res) => {
 
 const createquizz = async (req,res)=>{
     try{
-        const{quizz_id,
+        const{
+            QuizzId,
             title,
             description,
             courseId,
-            name,
-            Description,
             questions,
-            options}= req.body
+            options}= req.body;
 
         const newquizz= new quizz ({
-            quizz_id,
+            QuizzId,
             title,
             description,
             courseId,
-            name,
-            Description,
             questions,
             options
         })
 
         await newquizz.save();
         res.status(201).json(newquizz)
-    }catch(er){
-        console.error(err);
+    }catch(error){
+        console.error('error in creating quizz',error);
     res.status(500).send("Internal Server Error");
     }
 };
 
 const updatequizz = (req, res) => {
-    const quizId = req.params.quizId;
-    const { title, description, courseId, questions } = req.body;
-  
-    Quizz.findOneAndUpdate(
-      { quizz_id: quizId },
-      { title, description, courseId, questions },
-      { new: true }
-    )
-      .then((updatedQuiz) => {
-        if (!updatedQuiz) {
-          return res.status(404).json({ error: 'Quiz not found' });
-        }
-        res.json(updatedQuiz);
-      })
-      .catch((err) => {
-        res.status(500).json({ error: 'Failed to update quiz details' });
-      });
+    const Quizzid = req.params._id; // Assuming you're extracting it from request parameters
+    const objectId = new ObjectId(Quizzid);
+    const updatedquizz = req.body ;
+
+    quizz.findByIdAndUpdate(objectId, updatedquizz, { new: true })
+  .then(updatedquizz => {
+    // Handle the updated quiz response
+    console.log(updatedquizz);
+    res.json(updatedquizz);
+  })
+  .catch(error => {
+    // Handle any error that occurred during the update
+    res.status(500).json({ error: 'An error occurred while updating the quiz' });
+  });
+
+
   };
 
 
 
 
 export {
-    getallquizzes,
+    getallquizz,
     createquizz,
     updatequizz,
 };

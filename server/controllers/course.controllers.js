@@ -1,28 +1,28 @@
-import express from "express";
+
+import { get } from "mongoose";
 import Courses from "../mongodb/models/courses.js";
 
 
 const createcourse = async (req, res) => {
   try {
     const {
-      CourseId,
-      course_name,
+      courseId,
+      courseName,
       courseDescription,
-      instructorId,
       startDate,
       endDate,
-      courseimg,
+      courseImg
+
     } = req.body;
 
     // Create a new user object based on the provided data
     const newCourse = new Courses({
-      CourseId,
-      course_name,
+      courseId,
+      courseName,
       courseDescription,
-      instructorId,
       startDate,
       endDate,
-      courseimg,
+      courseImg,
     });
 
     // Save the new user to the database
@@ -30,7 +30,7 @@ const createcourse = async (req, res) => {
 
     res.status(201).json(newCourse);
   } catch (err) {
-    console.error(err);
+    console.error('error in creating course',err);
     res.status(500).send("Internal Server Error");
   }
 };
@@ -47,22 +47,26 @@ const getallcourse = async (req, res) => {
 
 const updatecourse = async (req, res) => {
   try {
-    const courseId = req.params.id;
+    const courseId = req.params.courseId; // Assuming the name parameter is passed in the request
 
-    // Find the course by ID
-    const course = await Courses.findById(courseId);
+    // Find the course by name and update the fields
+    const updatedCourse = await Courses.findOneAndUpdate(
+      {courseId},
+      {
+        courseName: req.body.courseName,
+        courseDescription: req.body.courseDescription,
+        startDate: req.body.startDate,
+        endDate: req.body.endDate,
+        courseImg: req.body.courseImg
+        // Update other fields as per your requirements
+      },
+      { new: true } // To return the updated course instead of the old one
+    );
 
-    if (!course) {
+    if (!updatedCourse) {
+      
       return res.status(404).json({ message: "Course not found" });
     }
-
-    // Update the course with new data
-    course.name = req.body.name;
-    course.description = req.body.description;
-    // Update other fields as per your requirements
-
-    // Save the updated course to the database
-    const updatedCourse = await course.save();
 
     res
       .status(200)
@@ -72,33 +76,32 @@ const updatecourse = async (req, res) => {
     res.status(500).json({ message: "Failed to update course" });
   }
 };
+
+
 const getcoursebyid = async (req, res) => {
+  
   try {
-    const courseId = req.params.id;
-
+    
+    const Id = req.params.courseId;
     // Find the course by ID
-    const course = await course.findById(courseId);
+    const getcourse = await Courses.findOne({ Id: Id });
 
-    if (!course) {
+    if (!getcourse) {
+
       return res.status(404).json({ message: "Course not found" });
     }
 
-    res.status(200).json(course);
+    res.status(200).json(getcourse);
   } catch (error) {
     console.error("Error retrieving course:", error);
     res.status(500).json({ message: "Failed to retrieve course" });
   }
 };
-// const deletecourse = async (req, res) => {};
-// const sutudentsenrolled = async (req, res) => {};
-// const instructor = async (req, res) => {};
 
 export {
   createcourse,
   getallcourse,
-  updatecourse,
+   updatecourse,
   getcoursebyid,
-  //   deletecourse,
-  //   sutudentsenrolled,
-  //   instructor
+  
 };

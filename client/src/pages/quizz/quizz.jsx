@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
+=======
+import React, { useEffect, useState } from 'react';
+>>>>>>> refs/remotes/origin/main
 
 const Quizz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -6,6 +10,7 @@ const Quizz = () => {
   const [score, setScore] = useState(0);
 
   // Mock quiz data
+<<<<<<< HEAD
   const quizData = [
     {
       question: 'What is the capital of France?',
@@ -19,6 +24,12 @@ const Quizz = () => {
     },
     // Add more questions here...
   ];
+=======
+  useEffect(()=>
+  
+  
+  )
+>>>>>>> refs/remotes/origin/main
 
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);
@@ -79,4 +90,8 @@ const Quizz = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Quizz;
+=======
+export default Quizz;
+>>>>>>> refs/remotes/origin/main

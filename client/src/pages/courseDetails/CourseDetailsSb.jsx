@@ -1,16 +1,15 @@
 import Sidebar from "../../components/sidebar/sidebar";
 import Navbar from "../../components/navbar/Navbar";
 // import Widget from "../../components/widget/Widget"
-import Courses from "../CoursesCatalog/Courses";
-import "./list.scss";
-const List = () => {
+import CourseDetails from "./CourseDetails";
+const CourseDetailsSb = () => {
   return (
     <div className="home">
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
         <div className="Courses">
-          <Courses />
+          <CourseDetails />
         </div>
         <footer>
         <div class="bg-white border-top-2 mt-auto">
@@ -31,12 +30,10 @@ const List = () => {
                         <p class="text-50 small mt-n1 mb-0">Copyright 2019 &copy; All rights reserved.</p>
                     </div>
                 </div>
-        
         </footer>
         
       </div>
     </div>
   );
 };
-
-export default List;
+export default CourseDetailsSb;

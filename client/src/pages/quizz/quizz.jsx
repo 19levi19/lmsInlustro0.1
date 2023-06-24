@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Quizz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -79,4 +79,6 @@ const Quizz = () => {
   );
 };
 
+
 export default Quizz;
+

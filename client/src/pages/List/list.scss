@@ -1,0 +1,44 @@
+.home {
+    display: flex;
+  
+    .homeContainer {
+      flex: 6;
+
+      .Courses{
+        margin-left: 2%;  
+        margin-top: 1%;
+        margin-right: 2%;
+        margin-bottom: 3%; 
+      }
+
+      .container {
+        padding-top: 1.5rem;
+        padding-bottom:1.5rem;
+        padding-right: 1.5rem!important;
+        padding-left: 1.5rem!important; 
+        padding: 32px 24px;   
+        background-color: #fff;
+        box-shadow: 2px 4px 10px  rgba(201, 201, 201);
+        width: 100%;
+      }
+  
+      .charts {
+        padding: 5px 20px;
+      }
+  
+      .listContainer {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+  
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 15px;
+        }
+
+        
+      }
+    }
+  }

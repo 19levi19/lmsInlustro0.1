@@ -1,14 +1,18 @@
 import express from "express";
 import {
-  getallquizz, updatequizz, createquizz
+  getallquizz, 
+  // updatequizz, 
+  createquizz, 
+  getquizzbyId,
+  deletequizzId
 } from "../controllers/quizz.controllers.js";
 
 const router = express.Router();
 
-
+router.route("/:quizzId").get(getquizzbyId);
 router.route("/create").post(createquizz);
 router.route("/").get(getallquizz);
-router.route("/:id").patch(updatequizz);
+router.route("/:quizzId").delete(deletequizzId);
 
 
 

@@ -1,6 +1,5 @@
-
-import { get } from "mongoose";
 import Courses from "../mongodb/models/courses.js";
+
 
 
 const createcourse = async (req, res) => {
@@ -11,8 +10,7 @@ const createcourse = async (req, res) => {
       courseDescription,
       startDate,
       endDate,
-      courseImg
-
+      courseImg,
     } = req.body;
 
     // Create a new user object based on the provided data
@@ -30,7 +28,7 @@ const createcourse = async (req, res) => {
 
     res.status(201).json(newCourse);
   } catch (err) {
-    console.error('error in creating course',err);
+    console.error("error in creating course", err);
     res.status(500).send("Internal Server Error");
   }
 };
@@ -51,20 +49,20 @@ const updatecourse = async (req, res) => {
 
     // Find the course by name and update the fields
     const updatedCourse = await Courses.findOneAndUpdate(
-      {courseId},
+      { courseId },
       {
         courseName: req.body.courseName,
         courseDescription: req.body.courseDescription,
         startDate: req.body.startDate,
         endDate: req.body.endDate,
-        courseImg: req.body.courseImg
+        courseImg: req.body.courseImg,
         // Update other fields as per your requirements
       },
       { new: true } // To return the updated course instead of the old one
     );
 
     if (!updatedCourse) {
-      
+
       return res.status(404).json({ message: "Course not found" });
     }
 
@@ -79,15 +77,14 @@ const updatecourse = async (req, res) => {
 
 
 const getcoursebyid = async (req, res) => {
-  
+
   try {
-    
-    const Id = req.params.courseId;
-    // Find the course by ID
-    const getcourse = await Courses.findOne({ Id: Id });
+    const courseId = req.params.courseId;
+
+    // use parseInt if the column type is int
+    const getcourse = await Courses.findOne({ courseId: courseId });
 
     if (!getcourse) {
-
       return res.status(404).json({ message: "Course not found" });
     }
 
@@ -98,10 +95,23 @@ const getcoursebyid = async (req, res) => {
   }
 };
 
-export {
-  createcourse,
-  getallcourse,
-   updatecourse,
-  getcoursebyid,
-  
-};
+const deleteCourse = async (req,res) => {
+
+  try{
+    const courseId = req.params.courseId;
+
+    const deletecourse= await Courses.findOneAndDelete({courseId: courseId});
+
+    if (!deletecourse){
+      return res.status(404).json({message:"Course not found"});
+    }
+
+    res.status(200).json(deletecourse);
+
+  }catch(error){
+    console.log("Error Deleting Course",error);
+    res.status(500).json({message:"failed to delete courses"});
+  }
+}
+
+export { createcourse, getallcourse, updatecourse, getcoursebyid, deleteCourse};

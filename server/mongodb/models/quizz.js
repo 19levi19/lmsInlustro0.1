@@ -1,14 +1,25 @@
 import mongoose from 'mongoose';
 
 const quizzschema =  new mongoose.Schema({
-  QuizzId: { 
-    type: String , 
-    required: true,
-    unique: true
+  quizzId: { 
+    type: String,
+    unique: true,
+    required:true
    }, 
-  title: String, 
-  description:{ text: String}, 
-  courseId: String, 
+
+  title: {
+    type: String
+  }, 
+
+  description:{ 
+    text: String
+  },
+
+  courseId:{ 
+    type: String,
+    required : true
+  }, 
+
   questions: [
     {
       q_id: String,

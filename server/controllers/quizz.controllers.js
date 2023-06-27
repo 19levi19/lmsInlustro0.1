@@ -1,7 +1,5 @@
-import express from 'express';
+
 import quizz from '../mongodb/models/quizz.js';
-import mongoose from 'mongoose';
-const ObjectId = mongoose.Types.ObjectId;
 
 const getallquizz = async (req,res) => {
     try{
@@ -16,7 +14,7 @@ const getallquizz = async (req,res) => {
 const createquizz = async (req,res)=>{
     try{
         const{
-            QuizzId,
+            quizzId,
             title,
             description,
             courseId,
@@ -24,7 +22,7 @@ const createquizz = async (req,res)=>{
             options}= req.body;
 
         const newquizz= new quizz ({
-            QuizzId,
+            quizzId,
             title,
             description,
             courseId,
@@ -40,30 +38,82 @@ const createquizz = async (req,res)=>{
     }
 };
 
-const updatequizz = (req, res) => {
-    const Quizzid = req.params._id; // Assuming you're extracting it from request parameters
-    const objectId = new ObjectId(Quizzid);
-    const updatedquizz = req.body ;
-
-    quizz.findByIdAndUpdate(objectId, updatedquizz, { new: true })
-  .then(updatedquizz => {
-    // Handle the updated quiz response
-    console.log(updatedquizz);
-    res.json(updatedquizz);
-  })
-  .catch(error => {
-    // Handle any error that occurred during the update
-    res.status(500).json({ error: 'An error occurred while updating the quiz' });
-  });
-
-
+const updatequizz = async (req, res) => {
+    try {
+      const quizzId = req.params.quizzId; // Assuming the name parameter is passed in the request
+  
+      // Find the course by name and update the fields
+      const updatedCourse = await Courses.findOneAndUpdate(
+        { quizzId },
+        {
+          title: req.body.title,
+          description: req.body.description,
+          courseId: req.body.courseId,
+          questions: req.body.questions,
+          options: req.body.options,
+          // Update other fields as per your requirements
+        },
+        { new: true } // To return the updated course instead of the old one
+      );
+  
+      if (!updatedCourse) {
+  
+        return res.status(404).json({ message: "Course not found" });
+      }
+  
+      res
+        .status(200)
+        .json({ message: "Course updated successfully", course: updatedCourse });
+    } catch (error) {
+      console.error("Error updating course:", error);
+      res.status(500).json({ message: "Failed to update course" });
+    }
   };
 
 
+const getquizzbyId = async (req, res) => {
 
+    try {
+      const quizzId = req.params.quizzId;
+  
+      // use parseInt if the column type is int
+      const getquizz = await quizz.findOne({ quizzId: quizzId });
+  
+      if (!getquizz) {
+        return res.status(404).json({ message: "Quizz not found" });
+      }
+  
+      res.status(200).json(getquizz);
+    } catch (error) {
+      console.error("Error retrieving quizz:", error);
+      res.status(500).json({ message: "Failed to retrieve quizz" });
+    }
+  };
+
+
+  const deletequizzId = async (req,res) => {
+
+    try{
+      const quizzId = req.params.quizzId;
+  
+      const deletequizz= await quizz.findOneAndDelete({ quizzId:quizzId});
+  
+      if (!deletequizz){
+        return res.status(404).json({message:"Quizz not found"});
+      }
+  
+      res.status(200).json(deletequizz);
+  
+    }catch(error){
+      console.log("Error Deleting quizz",error);
+      res.status(500).json({message:"failed to delete quizz"});
+    }
+  }
 
 export {
     getallquizz,
     createquizz,
-    updatequizz,
+    // updatequizz,
+    getquizzbyId,
+    deletequizzId
 };

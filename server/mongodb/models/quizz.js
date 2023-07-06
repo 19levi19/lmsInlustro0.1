@@ -33,7 +33,8 @@ const quizzschema =  new mongoose.Schema({
       ]
     },
 ]
-});
+},
+{timestamps:true});
 
 
 

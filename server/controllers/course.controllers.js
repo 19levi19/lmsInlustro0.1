@@ -112,6 +112,6 @@ const deleteCourse = async (req,res) => {
     console.log("Error Deleting Course",error);
     res.status(500).json({message:"failed to delete courses"});
   }
-}
+};
 
 export { createcourse, getallcourse, updatecourse, getcoursebyid, deleteCourse};

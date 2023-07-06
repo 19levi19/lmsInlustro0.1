@@ -43,7 +43,7 @@ const updatequizz = async (req, res) => {
       const quizzId = req.params.quizzId; // Assuming the name parameter is passed in the request
   
       // Find the course by name and update the fields
-      const updatedCourse = await Courses.findOneAndUpdate(
+      const updatedquizz = await quizz.findOneAndUpdate(
         { quizzId },
         {
           title: req.body.title,
@@ -56,17 +56,17 @@ const updatequizz = async (req, res) => {
         { new: true } // To return the updated course instead of the old one
       );
   
-      if (!updatedCourse) {
+      if (!updatedquizz) {
   
-        return res.status(404).json({ message: "Course not found" });
+        return res.status(404).json({ message: "Quizz not found" });
       }
   
       res
         .status(200)
-        .json({ message: "Course updated successfully", course: updatedCourse });
+        .json({ message: "Course updated successfully", course: updatedquizz });
     } catch (error) {
-      console.error("Error updating course:", error);
-      res.status(500).json({ message: "Failed to update course" });
+      console.error("Error updating quizz:", error);
+      res.status(500).json({ message: "Failed to update quizz" });
     }
   };
 
@@ -108,12 +108,12 @@ const getquizzbyId = async (req, res) => {
       console.log("Error Deleting quizz",error);
       res.status(500).json({message:"failed to delete quizz"});
     }
-  }
+  };
 
 export {
     getallquizz,
     createquizz,
-    // updatequizz,
+    updatequizz,
     getquizzbyId,
     deletequizzId
 };

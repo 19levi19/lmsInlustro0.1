@@ -1,0 +1,122 @@
+.navbar-nav .nav-link {
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(39,44,51,.5);
+}
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+}
+a {
+    background-color: transparent;
+}
+.nav-link {
+    display: flex;
+}
+.h-auto {
+    height: auto!important;
+}
+a {
+    text-decoration: none;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+.icon--left {
+    margin-right: 0.5rem;
+}
+.material-icons {
+    direction: ltr;
+}
+.material-icons {
+    vertical-align: middle;
+}
+.material-icons {
+    font-family: Material Icons;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga";
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.navbar-expand-sm.navbar-list .navbar-list__item {
+    padding: 1rem;
+}
+
+.navbar-expand-sm.navbar-list .navbar-list__item {
+    width: 100%;
+}
+.text-body {
+    color: #272c33!important;
+}
+.rounded {
+    border-radius: 0.25rem!important;
+}
+img {
+    border-style: none;
+}
+img {
+    vertical-align: middle;
+    width: 40px;
+}
+.bg-primary {
+    background-color: #5567ff!important;
+}
+.course-nav {
+    margin-bottom: 2rem;
+}
+.course-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.m-0 {
+    margin: 0!important;
+}
+.h1, .h2, h1, h2 {
+    line-height: 1.5;
+}
+.measure-lead-max {
+    max-width: 616px;
+}
+.small, small {
+    line-height: 1.5;
+}
+.text-50, .text-black-50 {
+    color: rgba(39,44,51,.5)!important;
+}
+.small, small {
+    font-size: .8125rem;
+    font-weight: 400;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: grey;
+    background-color: white;
+    outline-style:groove;
+}

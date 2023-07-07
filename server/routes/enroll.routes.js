@@ -11,7 +11,7 @@ const router = express.Router();
 
 router.route('/create').post(createEnrollment);
 router.route('/').get(getAllEnrollments);
-router.route("/:enrollmentId").get(getenrollmentbyId);
+router.route("/:id").get(getenrollmentbyId);
 router.route("/:enrollmentId").delete(deleteEnrollment);
 router.route("/:enrollmentId").patch(updateEnrollment);
 

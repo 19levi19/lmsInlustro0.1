@@ -1,5 +1,6 @@
 import user from "../mongodb/models/user.js";
 import Session from "../mongodb/models/sessions.js";
+// import Enrollment from "../mongodb/models/enrollments.js";
 import bcrypt from 'bcrypt';
 import {v4 as uuidv4} from 'uuid';
 
@@ -65,43 +66,48 @@ const getbyusername = async (req,res) => {
 };
 
 
-const userlogin = async (req,res) => {
-    try {
-        const { username, password } = req.body;
-    
-        const loginuser = await user.findOne({ username });
+const userlogin = async (req, res) => {
+  try {
+    const { email, password } = req.body;
 
-        if (!loginuser) {
-          return res.status(401).json({ message: 'Invalid username or password' });
-        }
-    
-        
-        const isPasswordValid = bcrypt.compare(password, loginuser.password);
-    
-       
-        if (!isPasswordValid) {
-          return res.status(401).json({ message: 'Invalid username or password' });
-        }
+    const loginuser = await user.findOne({ email });
 
-        const token = uuidv4();
+    if (!loginuser) {
+      return res.status(401).json({ message: 'Invalid username or password' });
+    }
 
-   
-        const session = {
-          userId: loginuser._id,
-          tokenId: token
-        };
+    const isPasswordValid = await bcrypt.compare(password, loginuser.password);
 
-        const newSession = new Session(session);
-        await newSession.save();
+    if (!isPasswordValid) {
+      return res.status(401).json({ message: 'Invalid email or password' });
+    }
 
     
-       
-        res.json({ message: 'Login successful' });
-      } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal Server Error');
-      }
-    };
+    const token = uuidv4();
+
+    
+    let session = await Session.findOne({ userId: loginuser._id });
+
+    if (session) {
+      
+      session.tokenId = token;
+    } else {
+      session = new Session({
+        userId: loginuser._id ,
+        tokenId: token
+      });
+    }
+
+    console.log(session);
+    
+    await session.save();
+
+    res.json({ token , message:"login succesfull"});
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Internal Server Error');
+  }
+};
 
 
     const deleteuser = async (req,res) => {
@@ -128,5 +134,62 @@ export{
     getbyusername,
     createuser,
     userlogin,
-    deleteuser
+    deleteuser,
+    getuserdetails
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const getuserdetails = async (req,res) => {
+
+//   try {
+//       const userid = req.params._id;
+
+  
+//       // use parseInt if the column type is int
+//       const getuser = await user.findOne({ user_id:userid});
+  
+//       if (!getuser) {
+//         return res.status(404).json({ message: "User not found" });
+//       }
+      
+//       const getuserrelation = await user.findOne({userId:userid});
+
+//       res.json({getuserrelation});
+  
+//       res.status(200).json(getuser);
+
+//        } catch (error) {
+//       console.error("Error retrieving user:", error);
+//       res.status(500).json({ message: "Failed to retrieve user" });
+//       }
+// };

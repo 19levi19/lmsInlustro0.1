@@ -1,12 +1,13 @@
 import Enrollment from "../mongodb/models/enrollments.js";
+import mongoose from "mongoose";
+const { ObjectId } = mongoose.Types;
 
 const createEnrollment = async (req, res) => {
     try {
-      const { enrollmentId,studentId, courseId, enrollmentDate, enrollmentStatus } = req.body;
+      const { studentId, courseId, enrollmentDate, enrollmentStatus } = req.body;
   
       // Create a new enrollment object
       const enrollment = new Enrollment({
-        enrollmentId,
         studentId,
         courseId,
         enrollmentDate,
@@ -35,24 +36,27 @@ const createEnrollment = async (req, res) => {
   };
   
  
-const getenrollmentbyId = async (req, res) => {
-
-  try {
-    const enrollmentId = req.params.enrollmentId;
-
-    // use parseInt if the column type is int
-    const getenrollment = await Enrollment.findOne({ enrollmentId: enrollmentId });
-
-    if (!getenrollment) {
-      return res.status(404).json({ message: "Course not found" });
+  const getenrollmentbyId = async (req, res) => {
+    try {
+      const enrollmentId = req.params.id;
+  
+      // Validate enrollmentId
+      if (!ObjectId.isValid(enrollmentId)) {
+        return res.status(400).json({ message: "Invalid enrollment ID" });
+      }
+  
+      const getenrollment = await Enrollment.findById(new ObjectId(enrollmentId));
+  
+      if (!getenrollment) {
+        return res.status(404).json({ message: "Enrollment not found" });
+      }
+  
+      res.status(200).json(getenrollment);
+    } catch (error) {
+      console.error("Error retrieving enrollment:", error);
+      res.status(500).json({ message: "Failed to retrieve enrollment" });
     }
-
-    res.status(200).json(getenrollment);
-  } catch (error) {
-    console.error("Error retrieving enrollment :", error);
-    res.status(500).json({ message: "Failed to retrieve enrollment" });
-  }
-};
+  };
   
   // Controller function to update an enrollment
   const updateEnrollment = async (req, res) => {
@@ -63,8 +67,6 @@ const getenrollmentbyId = async (req, res) => {
       const updatedenrollment = await Enrollment.findOneAndUpdate(
         { enrollmentId },
         {
-          courseId: req.body.courseId,
-          studentId: req.body.studentId,
           startDate: req.body.startDate,
           enrollmentDate: req.body.enrollementDate,
           enrollmentStatus: req.body.enrollmentStatus,
@@ -93,7 +95,7 @@ const getenrollmentbyId = async (req, res) => {
     try{
       const enrollmentId = req.params.enrollmentId;
   
-      const deleteenrollment= await Enrollmentx.findOneAndDelete({enrollmentId: enrollmentId});
+      const deleteenrollment= await Enrollment.findOneAndDelete({enrollmentId: enrollmentId});
   
       if (!deleteenrollment){
         return res.status(404).json({message:"Course not found"});

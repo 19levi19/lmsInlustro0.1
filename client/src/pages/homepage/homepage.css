@@ -458,3 +458,6 @@ a:-webkit-any-link {
     font-size: .8125rem;
     font-weight: 400;
 }
+.posts-card-popular .card-title, .posts-card-popular a {
+    color: #fff;
+}

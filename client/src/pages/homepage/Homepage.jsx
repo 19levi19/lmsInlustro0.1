@@ -181,50 +181,6 @@ function MyHomepage() {
 
                                     </div>
                                 </div>
-
-                                <div className="popoverContainer d-none">
-                                    <div className="media">
-                                        <div className="media-left mr-12pt">
-                                            <img src="" width="40" height="40" alt="Angular" className="rounded"/>
-                                        </div>
-                                        <div className="media-body">
-                                            <div className="card-title">React Native</div>
-                                            <p className="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p className="mt-16pt text-70">Learn the fundamentals of working with React Native and how to create basic applications.</p>
-
-                                    <div className="my-32pt">
-                                        <div className="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div className="d-flex align-items-center mr-8pt">
-                                                <AccessTimeIcon className="material-icons icon-16pt text-50 mr-4pt"/>
-                                                <p className="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div className="d-flex align-items-center">
-                                                <PlayCircleOutlineIcon className="material-icons icon-16pt text-50 mr-4pt"/>
-                                                <p className="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-center">
-                                            <a href="/" className="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div className="d-flex align-items-center">
-                                        <small className="text-50 mr-8pt">Your rating</small>
-                                        <div className="rating mr-8pt">
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                        </div>
-                                        <small className="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
 
                             <div className="col-sm-4 card-group-row__col">
@@ -258,50 +214,6 @@ function MyHomepage() {
 
                                     </div>
                                 </div>
-
-                                <div className="popoverContainer d-none">
-                                    <div className="media">
-                                        <div className="media-left mr-12pt">
-                                            <img src="" width="40" height="40" alt="Angular" className="rounded"/>
-                                        </div>
-                                        <div className="media-body">
-                                            <div className="card-title">Dev Ops</div>
-                                            <p className="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p className="mt-16pt text-70">Learn the fundamentals of working with Dev Ops and how to create basic applications.</p>
-
-                                    <div className="my-32pt">
-                                        <div className="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div className="d-flex align-items-center mr-8pt">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div className="d-flex align-items-center">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div className="d-flex align-items-center">
-                                        <small className="text-50 mr-8pt">Your rating</small>
-                                        <div className="rating mr-8pt">
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><span className="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small className="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
 
                             <div className="col-sm-4 card-group-row__col">
@@ -328,57 +240,10 @@ function MyHomepage() {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" className="ml-4pt material-icons text-20 card-course__icon-favorite" data-original-title="" title="">favorite_border</a>
-
                                         </div>
-
                                     </div>
                                 </div>
-
-                                <div className="popoverContainer d-none">
-                                    <div className="media">
-                                        <div className="media-left mr-12pt">
-                                            <img src="../../public/images/paths/redis_40x40@2x.png" width="40" height="40" alt="Angular" className="rounded"/>
-                                        </div>
-                                        <div className="media-body">
-                                            <div className="card-title">Redis</div>
-                                            <p className="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p className="mt-16pt text-70">Learn the fundamentals of working with Redis and how to create basic applications.</p>
-
-                                    <div className="my-32pt">
-                                        <div className="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div className="d-flex align-items-center mr-8pt">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div className="d-flex align-items-center">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div className="d-flex align-items-center">
-                                        <small className="text-50 mr-8pt">Your rating</small>
-                                        <div className="rating mr-8pt">
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><span className="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small className="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
 
                         </div>
@@ -416,52 +281,7 @@ function MyHomepage() {
 
                                     </div>
                                 </div>
-
-                                <div className="popoverContainer d-none">
-                                    <div className="media">
-                                        <div className="media-left mr-12pt">
-                                            <img src="../../public/images/paths/mailchimp_40x40@2x.png" width="40" height="40" alt="Angular" className="rounded"/>
-                                        </div>
-                                        <div className="media-body">
-                                            <div className="card-title">MailChimp</div>
-                                            <p className="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p className="mt-16pt text-70">Learn the fundamentals of working with MailChimp and how to create basic applications.</p>
-
-                                    <div className="my-32pt">
-                                        <div className="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div className="d-flex align-items-center mr-8pt">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div className="d-flex align-items-center">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div className="d-flex align-items-center">
-                                        <small className="text-50 mr-8pt">Your rating</small>
-                                        <div className="rating mr-8pt">
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><span className="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small className="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
-
                             <div className="col-sm-4 card-group-row__col">
 
                                 <div className="card js-overlay card-sm overlay--primary-dodger-blue stack stack--1 card-group-row__card mb-lg-0" data-toggle="popover" data-trigger="click" data-original-title="" title="" data-domfactory-upgraded="overlay">
@@ -493,50 +313,6 @@ function MyHomepage() {
 
                                     </div>
                                 </div>
-
-                                <div className="popoverContainer d-none">
-                                    <div className="media">
-                                        <div className="media-left mr-12pt">
-                                            <img src="../../public/images/paths/swift_40x40@2x.png" width="40" height="40" alt="Angular" className="rounded"/>
-                                        </div>
-                                        <div className="media-body">
-                                            <div className="card-title">Swift</div>
-                                            <p className="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p className="mt-16pt text-70">Learn the fundamentals of working with Swift and how to create basic applications.</p>
-
-                                    <div className="my-32pt">
-                                        <div className="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div className="d-flex align-items-center mr-8pt">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div className="d-flex align-items-center">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div className="d-flex align-items-center">
-                                        <small className="text-50 mr-8pt">Your rating</small>
-                                        <div className="rating mr-8pt">
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><span className="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small className="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
 
                             <div className="col-sm-4 card-group-row__col">
@@ -563,59 +339,11 @@ function MyHomepage() {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" className="ml-4pt material-icons text-20 card-course__icon-favorite" data-original-title="" title="">favorite_border</a>
-
                                         </div>
-
                                     </div>
                                 </div>
-
-                                <div className="popoverContainer d-none">
-                                    <div className="media">
-                                        <div className="media-left mr-12pt">
-                                            <img src="../../public/images/paths/wordpress_40x40@2x.png" width="40" height="40" alt="Angular" className="rounded"/>
-                                        </div>
-                                        <div className="media-body">
-                                            <div className="card-title">WordPress</div>
-                                            <p className="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p className="mt-16pt text-70">Learn the fundamentals of working with WordPress and how to create basic applications.</p>
-
-                                    <div className="my-32pt">
-                                        <div className="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div className="d-flex align-items-center mr-8pt">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div className="d-flex align-items-center">
-                                                <span className="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p className="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div className="d-flex align-items-center">
-                                        <small className="text-50 mr-8pt">Your rating</small>
-                                        <div className="rating mr-8pt">
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><StarBorderOutlined className="material-icons text-primary"/></span>
-                                            <span className="rating__item"><span className="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small className="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -725,20 +453,6 @@ function MyHomepage() {
                     </div>
                 </div>
 
-            </div>
-
-            <div className="bg-white border-top-2 mt-auto">
-                <div className="container page__container page-section d-flex flex-column">
-                    <p className="text-70 brand mb-24pt">
-                        <img className="brand-icon" src="" width="30" alt=""></img>
-                    </p>
-                    <p className="measure-lead-max text-50 small mr-8pt">Luma is a beautifully crafted user interface for modern Education Platforms, including Courses &amp; Tutorials, Video Lessons, Student and Teacher Dashboard, Curriculum Management, Earnings and Reporting, ERP, HR, CMS, Tasks, Projects, eCommerce and more.</p>
-                    <p className="mb-8pt d-flex">
-                        <a href="" className="text-70 text-underline mr-8pt small">Terms</a>
-                        <a href="" className="text-70 text-underline small">Privacy policy</a>
-                    </p>
-                    <p className="text-50 small mt-n1 mb-0">Copyright 2019 © All rights reserved.</p>
-                </div>
             </div>
         </div>
 

@@ -5,7 +5,7 @@ import{
     createuser,
     userlogin,
     deleteuser,
-    getuserdetails,
+    // getuserdetails,
 } from "../controllers/users.controllers.js"
 
 // import authenticateUser from '../middleware/authorizeUser.js';

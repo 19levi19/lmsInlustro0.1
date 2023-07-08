@@ -69,11 +69,15 @@ const getbyusername = async (req,res) => {
 const userlogin = async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log(req.body);
+    // return res.status(200).json({
+    //   "test": `${email}`
+    // });
 
     const loginuser = await user.findOne({ email });
 
     if (!loginuser) {
-      return res.status(401).json({ message: 'Invalid username or password' });
+      return res.status(401).json({ message: 'Invalid email or password' });
     }
 
     const isPasswordValid = await bcrypt.compare(password, loginuser.password);
@@ -135,7 +139,7 @@ export{
     createuser,
     userlogin,
     deleteuser,
-    getuserdetails
+    // getuserdetails
 }
 
 

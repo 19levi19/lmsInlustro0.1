@@ -8,12 +8,19 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform login logic here using email and password
+ 
     axios
-      .post('your-login-api-url', { email, password })
+      .post('//localhost:5000/user/login', {
+        "email" : email, 
+        "password" : password,
+        
+      })
       .then(response => {
         // Handle successful login
-        console.log('Login successful');
+        return response.data;
+      })
+      .then((data)=>{
+          console.log(data);
       })
       .catch(error => {
         // Handle login error

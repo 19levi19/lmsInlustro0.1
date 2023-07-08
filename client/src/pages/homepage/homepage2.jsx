@@ -19,8 +19,7 @@ function MyHomepage() {
             <div className="hero container page__container text-center py-112pt">
               <h1 className="text-white text-shadow">Learn to Code</h1>
               <p className="lead measure-hero-lead mx-auto text-white text-shadow mb-48pt">
-                Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills
-                with our professional tutorials.
+                Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.
               </p>
 
               <a
@@ -98,7 +97,7 @@ function MyHomepage() {
         </div>
         <div className="posts-card-popular__title card-body">
           <small className="text-muted text-uppercase">sketch</small>
-          <a className="card-title" href="blog-post.html">Merge Duplicates Inconsistent Symbols</a>
+          <a className="card-title" href="">Merge Duplicates Inconsistent Symbols</a>
         </div>
       </div> 
       </div>
@@ -121,7 +120,7 @@ function MyHomepage() {
           </div>
           <div className="posts-card-popular__title card-body">
             <small className="text-muted text-uppercase">invision</small>
-            <a className="card-title" href="blog-post.html">Design Systems Essentials</a>
+            <a className="card-title" href="">Design Systems Essentials</a>
           </div>
         </div>
       </div>
@@ -144,7 +143,7 @@ function MyHomepage() {
           </div>
           <div className="posts-card-popular__title card-body">
             <small className="text-muted text-uppercase">photoshop</small>
-            <a className="card-title" href="blog-post.html">Semantic Logo Design</a>
+            <a className="card-title" href="">Semantic Logo Design</a>
           </div>
         </div>
       </div>

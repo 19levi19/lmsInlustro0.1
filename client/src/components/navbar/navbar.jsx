@@ -14,19 +14,19 @@ const Navbar = () => {
 
       <ul className=" navbar-nav">
         <li className="nav-item">
-          <a href="index.html" className="nav-link">HOME</a>
+          <a href="/" className="nav-link">HOME</a>
         </li>
         <li className="nav-item">
-          <a href="index.html" className="nav-link">COURSES</a>
+          <a href="/" className="nav-link">COURSES</a>
         </li>
         <li className="nav-item">
-          <a href="index.html" className="nav-link">PATH</a>
+          <a href="/" className="nav-link">PATH</a>
         </li>
         <li className="nav-item">
-          <a href="index.html" className="nav-link">PRICING</a>
+          <a href="/" className="nav-link">PRICING</a>
         </li>
         <li className="nav-item">
-          <a href="index.html" className="nav-link">TEACHERS</a>
+          <a href="/" className="nav-link">TEACHERS</a>
         </li>
       </ul>
       <li className="navbar-nav" data-toggle="tooltip" data-title="Community" data-placement="bottom" data-boundary="window" data-original-title="" title="">

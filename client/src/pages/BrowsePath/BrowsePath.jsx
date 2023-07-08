@@ -63,7 +63,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window"> <FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window"> <FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -95,8 +95,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -140,7 +140,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window"><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window"><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -172,8 +172,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -217,7 +217,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -249,8 +249,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -294,7 +294,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Remove Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Remove Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -326,8 +326,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -371,7 +371,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -403,8 +403,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -448,7 +448,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -480,8 +480,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -525,7 +525,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -557,8 +557,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -639,7 +639,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -671,8 +671,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -716,7 +716,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -748,8 +748,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -793,7 +793,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -825,8 +825,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -870,7 +870,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -902,8 +902,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -947,7 +947,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -979,8 +979,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -1024,7 +1024,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -1056,8 +1056,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 
@@ -1101,7 +1101,7 @@ function BrowsePath() {
                                                         </div>
                                                     </div>
 
-                                                    <a href="student-path.html" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
+                                                    <a href="/" data-toggle="tooltip" data-title="Add Favorite" data-placement="top" data-boundary="window" ><FavoriteBorderIcon className="material-icons text-white"/></a>
 
                                                 </div>
 
@@ -1133,8 +1133,8 @@ function BrowsePath() {
                                                     </div>
                                                 </div>
                                                 <div className="d-flex align-items-center justify-content-center">
-                                                    <a href="student-path.html" className="btn btn-primary mr-8pt">Resume</a>
-                                                    <a href="student-path.html" className="btn btn-outline-secondary ml-0">Start over</a>
+                                                    <a href="/" className="btn btn-primary mr-8pt">Resume</a>
+                                                    <a href="/" className="btn btn-outline-secondary ml-0">Start over</a>
                                                 </div>
                                             </div>
 

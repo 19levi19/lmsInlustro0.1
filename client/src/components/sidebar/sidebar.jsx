@@ -56,91 +56,91 @@ const Sidebar = () => {
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="courses.html">
+                            <a className="sidebar-menu-button" href="/BrowseCourse">
                                 <LibraryBooksIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Browse Courses</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="paths.html">
+                            <a className="sidebar-menu-button" href="/BrowsePath">
                                 <StyleIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Browse Paths</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-dashboard.html">
+                            <a className="sidebar-menu-button" href="/StudentDashboard">
                                 <AccountBoxIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Student Dashboard</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-my-courses.html">
+                            <a className="sidebar-menu-button" href="/MyCourses">
                                 <SearchIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">My Courses</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-paths.html">
+                            <a className="sidebar-menu-button" href="/BrowsePath">
                                 <TimelineIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">My Paths</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-path.html">
+                            <a className="sidebar-menu-button" href="/BrowsePath">
                                 <ChangeHistoryIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Path Details</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-course.html">
+                            <a className="sidebar-menu-button" href="/BrowseCourse">
                                 <FaceIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Course Preview</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-lesson.html">
+                            <a className="sidebar-menu-button" href="/TakeLesson">
                                 <PanoramaFishEyeIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Lesson Preview</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-take-course.html">
+                            <a className="sidebar-menu-button" href="/TakeLesson">
                                 <ClassIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Take Course</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-take-lesson.html">
+                            <a className="sidebar-menu-button" href="/TakeLesson">
                                 <ImportContactsIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Take Lesson</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-take-quiz.html">
+                            <a className="sidebar-menu-button" href="/TakeQuiz">
                                 <DvrIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Take Quiz</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-quiz-results.html">
+                            <a className="sidebar-menu-button" href="/QuizResult">
                                 <PollIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">My Quizzes</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-quiz-result-details.html">
+                            <a className="sidebar-menu-button" href="/QuizResult">
                                 <LiveHelpIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Quiz Result</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-path-assessment.html">
+                            <a className="sidebar-menu-button" href="/SkillAssessment">
                                 <LayersIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Skill Assessment</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="student-path-assessment-result.html">
+                            <a className="sidebar-menu-button" href="/SkillResult">
                                 <AssignmentTurnedInIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Skill Result</span>
                             </a>
@@ -151,43 +151,43 @@ const Sidebar = () => {
                     <ul className="sidebar-menu">
 
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="instructor-dashboard.html">
+                            <a className="sidebar-menu-button" href="/">
                                 <SchoolIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Instructor Dashboard</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="instructor-courses.html">
+                            <a className="sidebar-menu-button" href="/">
                                 <ImportContactsIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Manage Courses</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="instructor-quizzes.html">
+                            <a className="sidebar-menu-button" href="/">
                                 <LiveHelpIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Manage Quizzes</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="instructor-earnings.html">
+                            <a className="sidebar-menu-button" href="/">
                                 <TrendingUpIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Earnings</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="instructor-statement.html">
+                            <a className="sidebar-menu-button" href="/">
                                 <DescriptionIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Statement</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="instructor-edit-course.html">
+                            <a className="sidebar-menu-button" href="/">
                                 <PostAddIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Edit Course</span>
                             </a>
                         </li>
                         <li className="sidebar-menu-item">
-                            <a className="sidebar-menu-button" href="instructor-edit-quiz.html">
+                            <a className="sidebar-menu-button" href="/">
                                 <QuizIcon className="material-icons sidebar-menu-icon sidebar-menu-icon--left"/>
                                 <span className="sidebar-menu-text">Edit Quiz</span>
                             </a>

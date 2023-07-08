@@ -64,7 +64,7 @@ function TakeQuiz() {
         <div className="container page__container">
           <nav className="course-nav">
             <a
-              href="student-take-lesson.html"
+              href="/TakeLesson"
               data-toggle="tooltip"
               data-placement="bottom"
               data-title="Getting Started with Angular: Introduction"
@@ -77,7 +77,7 @@ function TakeQuiz() {
               data-toggle="tooltip"
               data-placement="bottom"
               data-title="Getting Started with Angular: Introduction to TypeScript"
-              href="student-take-lesson.html"
+              href="/TakeLesson"
               data-original-title=""
               title=""
             >
@@ -87,14 +87,14 @@ function TakeQuiz() {
               data-toggle="tooltip"
               data-placement="bottom"
               data-title="Getting Started with Angular: Comparing Angular to AngularJS"
-              href="student-take-lesson.html"
+              href="/TakeLesson"
               data-original-title=""
               title=""
             >
               <CheckCircleOutlineIcon className="material-icons" />
             </a>
             <a
-              href="student-take-quiz.html"
+              href="/TakeQuiz"
               data-toggle="tooltip"
               data-placement="bottom"
               data-title="Quiz: Getting Started with Angular"

@@ -65,31 +65,31 @@ function TakeQuiz() {
                         </div>
                     </div>
                 </div>
-                <div class="container page__container">
-                    <div class="page-section">
-                        <div class="page-separator">
-                            <div class="page-separator__text">Your Answer</div>
+                <div className="container page__container">
+                    <div className="page-section">
+                        <div className="page-separator">
+                            <div className="page-separator__text">Your Answer</div>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <div class="custom-control custom-checkbox">
-                                <input id="customCheck01" type="checkbox" class="custom-control-input"/>
+                                <input id="customCheck01" type="checkbox" className="custom-control-input"/>
                                 <label for="customCheck01" class="custom-control-label">Ability to use newer syntax and offers reliability</label>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <div class="custom-control custom-checkbox">
                                 <input id="customCheck02" type="checkbox" class="custom-control-input"/>
                                 <label for="customCheck02" class="custom-control-label">Compatibility</label>
                             </div>
                         </div>
-                        <div class="form-group mb-32pt mb-lg-48pt">
+                        <div className="form-group mb-32pt mb-lg-48pt">
                             <div class="custom-control custom-checkbox">
-                                <input id="customCheck03" type="checkbox" class="custom-control-input"/>
-                                <label for="customCheck03" class="custom-control-label">Usage of missing features</label>
+                                <input id="customCheck03" type="checkbox" className="custom-control-input"/>
+                                <label for="customCheck03" className="custom-control-label">Usage of missing features</label>
                             </div>
                         </div>
 
-                        <p class="text-50 mb-0">Note: There can be multiple correct answers to this question.</p>
+                        <p className="text-50 mb-0">Note: There can be multiple correct answers to this question.</p>
                     </div>
                 </div>
 </div>

@@ -10,6 +10,8 @@ import SkillAssessment from "./pages/SkillAssessment/SkillAssessment";
 import SkillResult from "./pages/SkillAssessment/SkillResult";
 import LessonPreview from "./pages/LessonPreview/LessonPreview";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
+import TeachersQuiz from "./pages/TeachersQuiz/TeachersQuiz";
+import NewQuestion from "./pages/NewQuestion/NewQues";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="SkillResult" element={<SkillResult/>}/>
           <Route path="TakeLesson" element={<TakeLesson/>}/>
           <Route path="LessonPreview" element={<LessonPreview/>}/>
+          <Route path="TeachersQuiz" element={<TeachersQuiz/>}/>
+          <Route path="NewQuestion" element={<NewQuestion/>}/>
         </Routes>
       </BrowserRouter>
     </div>

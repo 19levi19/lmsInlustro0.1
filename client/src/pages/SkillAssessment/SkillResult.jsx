@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { PlayCircleOutline,Schedule,StarBorder,FavoriteBorder,ArrowBackOutlined } from '@mui/icons-material';
 import PersonIcon from '@mui/icons-material/Person';
 import './SkillResult.css'

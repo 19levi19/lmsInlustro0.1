@@ -1,8 +1,8 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import PlaylistAddCheckIcon from '@mui/icons-material/PlaylistAddCheck';
 import { KeyboardArrowRight } from '@mui/icons-material';
-// import '../BrowsePath/BrowsePath.css'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { Breadcrumbs } from '@mui/material';
 import Typography from '@mui/material';

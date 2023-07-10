@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import './login.css';
 
@@ -59,7 +60,7 @@ const LoginPage = () => {
               </p>
             </div>
             <div className="text-center">
-              <button type="submit" className="btn btn-primary">Login</button>
+              <a href="/" className="btn btn-primary">Login</a>
             </div>
           </form>
         </div>

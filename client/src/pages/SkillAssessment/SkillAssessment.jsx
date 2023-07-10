@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import ScheduleIcon from '@mui/icons-material/Schedule';
@@ -96,7 +97,7 @@ const SkillAssessment = () => {
                 <p className="text-50">Note: There can be multiple correct answers to this question.</p>
                 <div className="d-flex flex-column flex-sm-row flex-wrap align-items-center justify-content-center justify-content-md-start">
                   <a href="/SkillResult" className="btn btn-outline-secondary flex mb-8pt mb-sm-0 mr-sm-16pt">Previous question</a>
-                  <button type="submit" className="btn btn-accent flex">Next question</button>
+                  <a href="/SkillResult" className="btn btn-accent flex">Next question</a>
                 </div>
 
               </div>

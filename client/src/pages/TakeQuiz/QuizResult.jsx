@@ -1,8 +1,9 @@
+import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import CheckIcon from '@mui/icons-material/Check';
-import React from "react"
 import './quizResult.css'
 // import "./TakeQuiz.css"
 // import "../BrowsePath/BrowsePath.css"

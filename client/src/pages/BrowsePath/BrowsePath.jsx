@@ -1,4 +1,5 @@
 import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import TuneIcon from '@mui/icons-material/Tune';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -1179,20 +1180,11 @@ function BrowsePath() {
                                         </a>
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-
-
-
-
   )
 }
 export default BrowsePath;

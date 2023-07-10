@@ -23,7 +23,7 @@ function MyHomepage() {
               </p>
 
               <a
-                href="/"
+                href="/BrowsePath"
                 className="btn btn-lg btn-white btn--raised mb-16pt"
                 style={{ textDecoration: 'none', color: 'inherit' }}
               >

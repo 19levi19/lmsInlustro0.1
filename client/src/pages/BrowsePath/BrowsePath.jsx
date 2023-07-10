@@ -1,5 +1,4 @@
 import React from "react"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import TuneIcon from '@mui/icons-material/Tune';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';

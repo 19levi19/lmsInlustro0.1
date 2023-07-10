@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {PlaylistAddCheck,KeyboardArrowRight,ChevronLeft,ChevronRight, MoreHoriz,MoreVert, } from '@mui/icons-material';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 function TeachersQuiz() {

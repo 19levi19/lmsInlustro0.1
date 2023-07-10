@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import UpdateIcon from '@mui/icons-material/Update';
